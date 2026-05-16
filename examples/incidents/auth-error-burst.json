@@ -1,0 +1,2 @@
+{"id":"inc-auth-001","title":"Authentication service error burst","severity":"sev1","status":"active","signals":[{"id":"sig-a1","kind":"deployment","service":"auth","timestamp":"2026-05-16T07:00:00Z","severity":"info","message":"auth config deployed","tags":["deployment","auth"],"payload":{}},{"id":"sig-a2","kind":"alert","service":"auth","timestamp":"2026-05-16T07:04:00Z","severity":"critical","message":"5xx error burst","tags":["5xx","login"],"payload":{"region":"eu-west-1"}}]}
+

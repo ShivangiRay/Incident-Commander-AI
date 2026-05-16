@@ -1,0 +1,14 @@
+{
+  "id": "inc-checkout-001",
+  "title": "Checkout latency regression after deployment",
+  "severity": "sev1",
+  "status": "active",
+  "signals": [
+    {"id": "sig-001", "kind": "deployment", "service": "payments", "timestamp": "2026-05-16T09:02:00Z", "severity": "info", "message": "payments v2026.05.16 deployed", "tags": ["deployment", "payments"], "payload": {"version": "v2026.05.16", "region": "us-east-1"}},
+    {"id": "sig-002", "kind": "metric", "service": "checkout", "timestamp": "2026-05-16T09:07:00Z", "severity": "warning", "message": "p95 latency exceeded 2.4s", "tags": ["latency", "/checkout", "payments"], "payload": {"value": 2400, "region": "us-east-1"}},
+    {"id": "sig-003", "kind": "alert", "service": "checkout", "timestamp": "2026-05-16T09:08:00Z", "severity": "critical", "message": "Checkout SLO burn alert", "tags": ["slo", "/checkout", "payments"], "payload": {"region": "us-east-1"}},
+    {"id": "sig-004", "kind": "trace", "service": "payments", "timestamp": "2026-05-16T09:09:00Z", "severity": "warning", "message": "Payment authorization span timeout", "tags": ["trace", "latency", "/checkout"], "payload": {"duration_ms": 1800, "region": "us-east-1"}},
+    {"id": "sig-005", "kind": "runbook", "service": "payments", "timestamp": "2026-05-16T09:10:00Z", "severity": "info", "message": "Runbook recommends rollback when timeout regression follows deploy", "tags": ["runbook", "rollback"], "payload": {}}
+  ]
+}
+

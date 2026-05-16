@@ -1,0 +1,2 @@
+{"id":"inc-kafka-001","title":"Kafka consumer lag spike","severity":"sev2","status":"active","signals":[{"id":"sig-k1","kind":"metric","service":"orders","timestamp":"2026-05-16T08:00:00Z","severity":"warning","message":"consumer lag above 150k","tags":["kafka","lag"],"payload":{"region":"global"}},{"id":"sig-k2","kind":"alert","service":"orders","timestamp":"2026-05-16T08:02:00Z","severity":"warning","message":"order processor behind","tags":["kafka","orders"],"payload":{}}]}
+

@@ -1,0 +1,2 @@
+{"id":"inc-cascade-001","title":"Cascading dependency failure","severity":"sev1","status":"active","signals":[{"id":"sig-c1","kind":"metric","service":"checkout","timestamp":"2026-05-16T06:00:00Z","severity":"critical","message":"checkout failures rising","tags":["checkout","payments","inventory"],"payload":{}},{"id":"sig-c2","kind":"trace","service":"inventory","timestamp":"2026-05-16T06:03:00Z","severity":"warning","message":"inventory dependency timeout","tags":["dependency"],"payload":{}}]}
+

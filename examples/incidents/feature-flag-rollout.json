@@ -1,0 +1,2 @@
+{"id":"inc-flag-001","title":"Feature flag rollout gone wrong","severity":"sev2","status":"active","signals":[{"id":"sig-f1","kind":"feature_flag","service":"checkout","timestamp":"2026-05-16T05:00:00Z","severity":"info","message":"new checkout enabled for 50 percent","tags":["feature_flag","/checkout"],"payload":{}},{"id":"sig-f2","kind":"alert","service":"checkout","timestamp":"2026-05-16T05:06:00Z","severity":"warning","message":"conversion drop detected","tags":["business_metric","/checkout"],"payload":{}}]}
+
